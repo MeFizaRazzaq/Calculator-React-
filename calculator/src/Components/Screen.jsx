@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Screen() {
+function Screen({text}) {
   return (
-    <div>20 on screen</div>
+    <div>{text}</div>
   )
 }
 

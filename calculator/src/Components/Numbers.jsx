@@ -6,7 +6,7 @@ function Numbers() {
         <div className='n'>AC</div>
         <div className='n'>+/-</div>
         <div className='n'>%</div>
-        <div className='n'>7</div>
+        <div className='n' style={{ cursor: 'pointer'}}>7</div>
         <div className='n'>8</div>
         <div className='n'>9</div>
         <div className='n'>4</div>

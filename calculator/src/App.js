@@ -4,7 +4,8 @@ import Screen from './Components/Screen';
 import Operators from './Components/Operators';
 import './App.css';
 
-function App() {
+const App=()=>{
+  
   return (
     <div className="App">
       <h1>Calculator</h1>
