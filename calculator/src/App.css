@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  margin: 50px;
+  color: beige;
+  padding: 5px;
 }
 
 .App-logo {
@@ -35,4 +39,76 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Screen{
+  grid-area: Sc;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 25px 15px 5px;
+  font-size: 50px;
+  text-align: right;
+}
+
+
+.Num{
+  grid-area: num;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 50px;
+}
+
+.n0{
+  grid-area: g;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.n{
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.Numbers{
+  display: grid;
+  gap: 1px;
+  grid-template: 
+  '. . .'
+  '. . .'
+  '. . .'
+  '. . .'
+  'g g .';
+}
+
+.Operator{
+  grid-area: Op;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: rgb(222, 124, 39);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 50px;
+  gap: 1px;
+}
+.o{
+  color: rgb(252, 252, 252);
+  border: 1px solid rgb(240, 233, 233);
+  border-radius: 15px;
+}
+.Cal{
+  background-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template: 'Sc Sc Sc Sc'
+  'num num num Op';
 }
