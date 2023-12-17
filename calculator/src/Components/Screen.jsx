@@ -7,7 +7,7 @@ function Screen({input1,op,input2}) {
   //var input1=5;
   return (
     <>
-    <div>{input1} {op} {input2}</div>
+    <div>{input1} {op && op !== '=' ? op : ''} {input2}</div>
     </>
   )
 }

@@ -59,7 +59,6 @@
     grid-area: op;
     display: grid;
     grid-template-columns: 100%;
-    border: 2px solid red;
   }
 
   .o{
@@ -76,7 +75,6 @@
 
   .operands{
     grid-area: o;
-    border: 2px solid red;
     display: grid;
     padding: 3px;
     gap: 1px;
@@ -86,7 +84,6 @@
 
   .numbers{ 
     grid-area: num;
-    border: 2px solid red;
     display: grid;
     padding: 3px;
     gap: 1px;
@@ -111,7 +108,6 @@
   }
 
   .zero{ grid-area: z;
-    border: 2px solid red;
     color: black;
     padding: 18px;
     border: 1px solid black;
@@ -126,7 +122,6 @@
   }
 
   .dot{ grid-area: d;
-    border: 2px solid red;
     color: black;
     padding: 18px;
     border: 1px solid black;
@@ -149,5 +144,4 @@
     'o o o op'
     'num num num op'
     ;
-    border: 2px solid blue;
   }
