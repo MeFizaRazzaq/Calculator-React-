@@ -1,15 +1,29 @@
 import React from 'react'
 
-function Operators() {
+function Operators({onOperatorClick}) {
   return (
     <>
-        <div className='o'>/</div>
-        <div className='o'>*</div>
-        <div className='o'>-</div>
-        <div className='o'>+</div>
-        <div className='o'>=</div>
+        <button className='o' onClick={() => onOperatorClick('/')}>/</button>
+        <button className='o' onClick={() => onOperatorClick('*')}>*</button>
+        <button className='o' onClick={() => onOperatorClick('-')}>-</button>
+        <button className='o' onClick={() => onOperatorClick('+')}>+</button>
+        <button className='o' onClick={() => onOperatorClick('=')}>=</button>
     </>
   )
 }
+
+/*
+function Operators() {
+  return (
+    <>
+        <button className='o' onClick={() => onOperatorClick('/')}>/</button>
+        <button className='o' onClick={() => onOperatorClick('*')}>*</button>
+        <button className='o' onClick={() => onOperatorClick('-')}>-</button>
+        <button className='o' onClick={() => onOperatorClick('+')}>+</button>
+        <button className='o' onClick={() => onOperatorClick('=')}>=</button>
+    </>
+  )
+}
+*/
 
 export default Operators

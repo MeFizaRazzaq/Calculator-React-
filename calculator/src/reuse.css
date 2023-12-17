@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  margin: 50px;
+  color: beige;
+  padding: 5px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Screen{
+  grid-area: Sc;
+  background-color: aliceblue;
+  height: 70px;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 25px 15px 5px;
+  font-size: 50px;
+  text-align: right;
+}
+
+.Num{
+  grid-area: num;
+  display: grid;
+  grid-template: 'num Op';
+  width: 100%;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 50px;
+}
+
+.n0{
+  grid-area: g;
+  color: black;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.n{
+  color: black;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.Numbers{
+  display: grid;
+  padding: 8px;
+  gap: 1px;
+  grid-template: 
+  '. . .'
+  '. . .'
+  '. . .'
+  '. . .'
+  'g g .';
+}
+
+.Operator{
+  grid-area: Op;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: rgb(222, 124, 39);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 50px;
+  gap: 1px;
+}
+.o{
+  color: rgb(252, 252, 252);
+  border: 1px solid rgb(240, 233, 233);
+  border-radius: 15px;
+  text-align: justify center;
+}
+.Cal{
+  background-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template: 'Sc Sc Sc Sc'
+  'num num num Op';
+}
+
+.screen{ grid-area: sc;}
+.oprand{ grid-area: op;}
+.numbers{ grid-area: num;}
+.zero{ grid-area: z;}
+
+.Main{
+  display: grid;
+  padding: 8px;
+  gap: 1px;
+  grid-template: 
+  'sc sc sc'
+  'num num op'
+  'z z op';
+  background-color: aquamarine;
+  border: 2px solid blue;
+}

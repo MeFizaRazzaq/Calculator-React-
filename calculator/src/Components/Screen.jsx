@@ -1,12 +1,25 @@
 import React from 'react'
-import Numbers from './Numbers'
 
-function Screen() {
+//{input1,op,input2}
+
+function Screen({input1,op,input2}) {
     //const [intial,current]=useState("Enter values");
+  //var input1=5;
+  return (
+    <>
+    <div>{input1} {op} {input2}</div>
+    </>
+  )
+}
+
+/*
+function Screen({input1,op,input2}) {
+    //const [intial,current]=useState("Enter values");
+
   return (
     <>
       <div className="Screen">
-    <div>text is ...</div>
+    <div>{input1} {op} {input2}</div>
     </div>
     <div className='Num'>
     <Numbers/>
@@ -14,5 +27,6 @@ function Screen() {
     </>
   )
 }
+*/
 
 export default Screen
