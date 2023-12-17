@@ -1,8 +1,17 @@
 import React from 'react'
+import Numbers from './Numbers'
 
-function Screen({text}) {
+function Screen() {
+    //const [intial,current]=useState("Enter values");
   return (
-    <div>{text}</div>
+    <>
+      <div className="Screen">
+    <div>text is ...</div>
+    </div>
+    <div className='Num'>
+    <Numbers/>
+    </div>
+    </>
   )
 }
 

@@ -53,9 +53,11 @@
   text-align: right;
 }
 
-
 .Num{
   grid-area: num;
+  display: grid;
+  grid-template: 'num Op';
+  width: 100%;
   background-color: aliceblue;
   color: black;
   border-radius: 10px;
@@ -67,17 +69,22 @@
 .n0{
   grid-area: g;
   color: black;
+  padding: 15px;
   border: 1px solid black;
   border-radius: 15px;
+  cursor: pointer;
 }
 .n{
   color: black;
+  padding: 15px;
   border: 1px solid black;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .Numbers{
   display: grid;
+  padding: 8px;
   gap: 1px;
   grid-template: 
   '. . .'
@@ -90,7 +97,7 @@
 .Operator{
   grid-area: Op;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   background-color: rgb(222, 124, 39);
   color: rgb(255, 255, 255);
   border-radius: 10px;
